@@ -250,47 +250,7 @@ class _ProfilePageState extends State<ProfilePage> {
             
             const SizedBox(height: 24),
             
-            // Enhanced Model Features
-            _buildSectionHeader('Enhanced Lip Reading Model'),
-            const SizedBox(height: 16),
-            
-            _buildFeatureCard(
-              'Improved Hyperparameter Tuning',
-              'Configurable architecture for optimal performance',
-              Icons.tune,
-            ),
-            _buildFeatureCard(
-              'L2 Regularization',
-              'Prevents overfitting for better generalization',
-              Icons.data_usage,
-            ),
-            _buildFeatureCard(
-              'Enhanced PCA Application',
-              'Standardization and optimal component selection',
-              Icons.auto_awesome,
-            ),
-            _buildFeatureCard(
-              'Class Weight Balancing',
-              'Improved performance on imbalanced datasets',
-              Icons.balance,
-            ),
-            _buildFeatureCard(
-              'Model Comparison Framework',
-              'Compare multiple configurations for best results',
-              Icons.analytics,
-            ),
-            _buildFeatureCard(
-              'PCA Visualization',
-              'Visual representation of explained variance',
-              Icons.visibility,
-            ),
-            _buildFeatureCard(
-              'Detailed Logging & Reporting',
-              'Comprehensive analytics and progress tracking',
-              Icons.assessment,
-            ),
-            
-            const SizedBox(height: 24),
+
             
             Center(
               child: ElevatedButton(

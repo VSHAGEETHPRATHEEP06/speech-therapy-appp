@@ -40,8 +40,8 @@ class _ProgressReportsPageState extends State<ProgressReportsPage> with SingleTi
         backgroundColor: Colors.black,
         bottom: TabBar(
           controller: _tabController,
-          labelStyle: GoogleFonts.poppins(fontWeight: FontWeight.w600),
-          unselectedLabelStyle: GoogleFonts.poppins(),
+          labelStyle: GoogleFonts.poppins(fontWeight: FontWeight.w600, color: Colors.white),
+          unselectedLabelStyle: GoogleFonts.poppins(color: Colors.white.withOpacity(0.7)),
           indicatorColor: Colors.white,
           tabs: const [
             Tab(text: 'Overview'),

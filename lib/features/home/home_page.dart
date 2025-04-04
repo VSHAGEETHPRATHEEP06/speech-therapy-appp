@@ -127,7 +127,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                     const SizedBox(height: 16),
                     Text(
-                      'Enhanced Lip Reading Model',
+                      'Speech Therapy App',
                       style: GoogleFonts.poppins(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
@@ -137,7 +137,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      'Cutting-edge speech therapy using AI',
+                      'Your personal speech therapy assistant',
                       style: GoogleFonts.poppins(
                         fontSize: 16,
                         color: Colors.grey[600],
@@ -185,9 +185,9 @@ class _HomePageState extends State<HomePage> {
               
               const SizedBox(height: 32),
               
-              // Key features
+              // App features
               Text(
-                'Enhanced Model Features',
+                'App Features',
                 style: GoogleFonts.poppins(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
@@ -197,39 +197,19 @@ class _HomePageState extends State<HomePage> {
               const SizedBox(height: 16),
               
               _buildFeatureCard(
-                'Improved Hyperparameter Tuning',
-                'Configurable architecture for optimal performance',
-                Icons.tune,
+                'Personalized Exercises',
+                'Custom speech therapy exercises tailored to your needs',
+                Icons.fitness_center,
               ),
               _buildFeatureCard(
-                'L2 Regularization',
-                'Prevents overfitting for better generalization',
-                Icons.security,
+                'Progress Tracking',
+                'Monitor your improvement over time with detailed reports',
+                Icons.bar_chart,
               ),
               _buildFeatureCard(
-                'Enhanced PCA Application',
-                'Standardization with optimal component selection',
-                Icons.auto_graph,
-              ),
-              _buildFeatureCard(
-                'Class Weight Balancing',
-                'Improved performance for imbalanced datasets',
-                Icons.balance,
-              ),
-              _buildFeatureCard(
-                'Model Comparison Framework',
-                'Compare multiple configurations for best results',
-                Icons.compare_arrows,
-              ),
-              _buildFeatureCard(
-                'PCA Visualization',
-                'Visual representation of explained variance',
-                Icons.visibility,
-              ),
-              _buildFeatureCard(
-                'Detailed Logging & Reporting',
-                'Comprehensive analytics and progress tracking',
-                Icons.assessment,
+                'Guided Sessions',
+                'Step-by-step speech therapy sessions with feedback',
+                Icons.play_circle_outline,
               ),
               
               const SizedBox(height: 24),

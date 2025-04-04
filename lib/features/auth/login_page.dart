@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:lottie/lottie.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class LoginPage extends StatefulWidget {
@@ -19,16 +18,15 @@ class _LoginPageState extends State<LoginPage> {
   @override
   void initState() {
     super.initState();
-    // Pre-fill with demo credentials for easier testing
-    _usernameController.text = 'Thusha';
   }
 
   Future<bool> _login(String username, String password) async {
     // Simulate API call
     await Future.delayed(const Duration(seconds: 1));
     
-    // Check hardcoded credentials
-    if (username == 'Thusha' && password == 'Thusha1115') {
+    // In a real app, this would validate against a server
+    // For demo purposes, allowing any login with non-empty fields
+    if (username.isNotEmpty && password.isNotEmpty) {
       // Save login state
       final prefs = await SharedPreferences.getInstance();
       await prefs.setBool('isLoggedIn', true);
@@ -104,15 +102,7 @@ class _LoginPageState extends State<LoginPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                // Lottie animation
-                SizedBox(
-                  height: 150,
-                  child: Lottie.network(
-                    'https://assets1.lottiefiles.com/packages/lf20_tsxbtrcu.json',
-                    fit: BoxFit.contain,
-                  ),
-                ),
-                const SizedBox(height: 24),
+
                 
                 // Title
                 Text(
@@ -139,35 +129,7 @@ class _LoginPageState extends State<LoginPage> {
                 
                 const SizedBox(height: 32),
                 
-                // Demo credentials info card
-                Container(
-                  padding: const EdgeInsets.all(12),
-                  decoration: BoxDecoration(
-                    color: Colors.grey[100],
-                    border: Border.all(color: Colors.grey[300]!),
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  child: Column(
-                    children: [
-                      Text(
-                        'Demo Credentials',
-                        style: GoogleFonts.poppins(
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black,
-                        ),
-                      ),
-                      const SizedBox(height: 8),
-                      Text(
-                        'Username: Thusha\nPassword: Thusha1115',
-                        style: GoogleFonts.poppins(
-                          color: Colors.grey[800],
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                
-                const SizedBox(height: 32),
+
                 
                 // Username field
                 TextField(
